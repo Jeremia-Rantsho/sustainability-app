@@ -1,0 +1,196 @@
+/* src/components/profile.css */
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8f5;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin-right: 75%;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.nav-buttons-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-button,
+.logout-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.nav-button:hover,
+.logout-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.profile-card {
+  background-color: #fff;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  font-size: 80px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 26px;
+  color: #00796b;
+  margin: 5px 0;
+}
+
+.profile-title {
+  font-size: 16px;
+  color: #555;
+  font-style: italic;
+}
+
+.profile-stats p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.profile-stats span {
+  font-weight: bold;
+  color: #00796b;
+}
+
+.icon {
+  color: #4caf50;
+  margin-right: 8px;
+}
+
+.achievements-section {
+  margin-top: 20px;
+}
+
+.achievements-section h3 {
+  color: #00796b;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.achievements-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.achievements-section li {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.profile-container .back-btn {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: #fff;
+  border: 2px solid #00796b;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #004d40;
+}
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer p:first-child {
+  font-weight: bold;
+}
+
+.footer p:last-child {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Add a subtle hover effect to make the footer interactive */
+.footer p:hover {
+  color: #f08d0b;
+  cursor: pointer;
+}

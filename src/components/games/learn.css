@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.learn-container {
+  /* Top navigation bar */
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .back-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-right: 75%;
+  }
+
+  .back-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+  .nav-buttons-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-button,
+  .logout-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+
+  .nav-button:hover,
+  .logout-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+  .logout-button {
+    background-color: #e74c3c;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+}
+
+.learn-container {
+  padding: 20px;
+  text-align: center;
+  height: 73vh;
+  padding-top: 100px;
+}
+
+.facts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.fact-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.fact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.next-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 50px;
+  font-size: 16px;
+  width: 25%;
+}
+
+.next-button:hover {
+  background-color: #45a049;
+}
+
+.horizontal-line {
+  border: 2px solid #f08d0b;
+  height: 1px;
+  background: #f08d0b;
+  margin-bottom: 35px;
+  margin-top: -17px;
+  margin-left: 50%;
+}
+
+.horizontal-lines {
+  border: 2px solid #f08d0b;
+  height: 1px;
+  background: #f08d0b;
+  margin-top: 245px;
+  margin-bottom: 0px;
+  margin-right: 50%;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer p:first-child {
+  font-weight: bold;
+}
+
+.footer p:last-child {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Add a subtle hover effect to make the footer interactive */
+.footer p:hover {
+  color: #f08d0b;
+  cursor: pointer;
+}
