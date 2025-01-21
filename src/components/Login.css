@@ -87,7 +87,7 @@ input:focus {
     padding: 14px 0;
     width: 100%;
     background-color: #000000;
-    color: #f8b100;
+    color: #f26522;
     font-size: 18px;
     font-weight: bold;
     border: none;
@@ -98,7 +98,7 @@ input:focus {
 }
 
 .login-container button:hover {
-    background-color: #c7920b;
+    background-color: #f26522;
     color: #000000;
 }
 
@@ -195,7 +195,7 @@ input:focus {
   
   /* Add a subtle hover effect to make the footer interactive */
   .footer p:hover {
-    color: #f08d0b;
+    color: #f26522;
     cursor: pointer;
   }
 

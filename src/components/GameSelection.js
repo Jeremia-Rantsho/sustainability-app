@@ -64,17 +64,52 @@ const GameSelection = () => {
     // }, []);
 
     const startGame = (sdgId) => {
-        if(sdgId === 1 || sdgId === 2 || sdgId === 3 || sdgId === 4 ) {
+        if(sdgId === 1){
             navigate(`/games/firstLevel/${sdgId}`);
-        }else if(sdgId === 5 || sdgId === 6 || sdgId === 7 || sdgId === 8 ){
+        }else if(sdgId === 2){
             navigate(`/games/secondLevel/${sdgId}`);
-        }else if(sdgId === 9 || sdgId === 10 || sdgId === 11 || sdgId === 12 ){
+        }else if(sdgId === 3){
             navigate(`/games/thirdLevel/${sdgId}`);
-        }else if(sdgId === 13 || sdgId === 14 || sdgId === 15 || sdgId === 16 ){
+        }else if(sdgId === 4){
             navigate(`/games/fourthLevel/${sdgId}`);
-        }else{
-            navigate(`/games/SDGGame/${sdgId}`);
+        }else if(sdgId === 5){
+            navigate(`/games/fifthLevel/${sdgId}`);
+        }else if(sdgId === 6){
+            navigate(`/games/sixthLevel/${sdgId}`);
+        }else if(sdgId === 7){
+            navigate(`/games/seventhLevel/${sdgId}`);
+        }else if(sdgId === 8){
+            navigate(`/games/eigthLevel/${sdgId}`);
+        }else if(sdgId === 9){
+            navigate(`/games/ninethLevel/${sdgId}`);
+        }else if(sdgId === 10){
+            navigate(`/games/tenthLevel/${sdgId}`);
+        }else if(sdgId === 11){
+            navigate(`/games/eleventhLevel/${sdgId}`);
+        }else if(sdgId === 12){
+            navigate(`/games/twelveLevel/${sdgId}`);
+        }else if(sdgId === 13){
+            navigate(`/games/thirteenthLevel/${sdgId}`);
+        }else if(sdgId === 14){
+            navigate(`/games/fourteenthLevel/${sdgId}`);
+        }else if(sdgId === 15){
+            navigate(`/games/fifteenthLevel/${sdgId}`);
+        }else if(sdgId === 16){
+            navigate(`/games/sixteenthLevel/${sdgId}`);
         }
+
+
+        // if (sdgId === 1 || sdgId === 5 || sdgId === 9 || sdgId === 13) {
+        //     navigate(`/games/memoryGameLevels/${sdgId}`);
+        // } else if (sdgId === 2 || sdgId === 6 || sdgId === 10 || sdgId === 14) {
+        //     navigate(`/games/wordSearchLevels/${sdgId}`);
+        // } else if (sdgId === 3 || sdgId === 7 || sdgId === 11 || sdgId === 15) {
+        //     navigate(`/games/riddleLevels/${sdgId}`);
+        // } else if (sdgId === 4 || sdgId === 8 || sdgId === 12 || sdgId === 16) {
+        //     navigate(`/games/alphabetWheelLevels/${sdgId}`);
+        // } else {
+        //     navigate(`/games/SDGGame/${sdgId}`);
+        // }
     };
 
     const goToLearnPage = (sdgId) => {
@@ -115,7 +150,7 @@ const GameSelection = () => {
                 </div>
             </div>
             <div className='horizontal-line'></div>
-            
+
 
             <h1>Play SDGs</h1>
             <div className="sdg-container">
@@ -123,7 +158,7 @@ const GameSelection = () => {
                     <div key={sdg.id} className="sdg-box">
                         <div className="sdg-image-container">
                             <img src={sdg.image} alt={sdg.name} className="sdg-image" />
-                       
+
                         </div>
                         {/* <h2>{sdg.name}</h2> */}
                         <div className="game-buttons">

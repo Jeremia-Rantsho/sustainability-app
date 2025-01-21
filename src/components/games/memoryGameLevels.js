@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from "react-icons/fa";
 import Card from "./card.js";
 import "./memoryGameLevels.css";
@@ -67,7 +67,7 @@ const initialCards = [
   },
 ];
 
-const MemoryGameOne = () => {
+const MemoryGame = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -123,17 +123,13 @@ const MemoryGameOne = () => {
         <button onClick={goBack} className="back-button">
           <FaArrowLeft /> Back
         </button>
-        <button onClick={resetGame} className="nav-button">
-          New Game
-        </button>
+        <button onClick={resetGame} className="nav-button">New Game</button>
         <label>Moves: {moves}</label>
-        <label>Game Timer:</label>
-        <button onClick={resetGame} className="nav-button">
-          Audio Settings
-        </button>
-        <button onClick={resetGame} className="nav-button">
-          Best Records
-        </button>
+        <label>
+            Game Timer: 
+        </label>
+        <button onClick={resetGame} className="nav-button">Audio Settings</button>
+        <button onClick={resetGame} className="nav-button">Best Records</button>
       </div>
       <h1>Memory Game</h1>
       <div className="game-board">
@@ -157,4 +153,4 @@ const MemoryGameOne = () => {
   );
 };
 
-export default MemoryGameOne;
+export default MemoryGame;

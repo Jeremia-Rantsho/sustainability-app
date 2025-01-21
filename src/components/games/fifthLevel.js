@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
-import Card from "./card.js";
+import Card from "./cardFive.js";
 import "./memoryGameLevels.css";
 
 const initialCards = [
@@ -67,7 +67,7 @@ const initialCards = [
   },
 ];
 
-const MemoryGameOne = () => {
+const MemoryGameFive = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -157,4 +157,4 @@ const MemoryGameOne = () => {
   );
 };
 
-export default MemoryGameOne;
+export default MemoryGameFive;

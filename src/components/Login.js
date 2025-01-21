@@ -1,10 +1,8 @@
 // src/components/Login.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import { View, TextInput, Button, Text, StyleSheet, Alert } from 'react';
 import './index.css';
-import axios from 'axios';
-import logo from '../assets/Logo.png';
+import logo from '../assets/logo2.jpg';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -59,7 +57,7 @@ const Login = () => {
                         </div>
                         <button type="submit">Login</button>
                     </form>
-                    <p>Don't have an account? <a className='register' href="/register">Register</a></p>
+                    <p>Don't have an account? <a className='register' href='/register'>Register</a></p>
                 </div>
             </div>
             {/* <div className='horizontal-lines'></div> */}

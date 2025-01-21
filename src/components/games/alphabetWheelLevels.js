@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../index.css';
-import { FaUser, FaSignOutAlt, FaArrowLeft } from 'react-icons/fa'; // Import icons
+import './alphabetWheelLevels.css';
+import { FaUser, FaSignOutAlt, FaArrowLeft } from 'react-icons/fa';
 
-const SDGGame = ({ sdgId, categories }) => {
+
+const categories = {
+    sdgFour: ["University", "Learning Tools", "Innovations"],
+    sdgEight: ["Jobs", "Economic Terms", "Industries"],
+    sdgTwelve: ["Sustainability Terms", "Eco-Friendly Products", "Waste Management"],
+    sdgSixteen: ["SRC Initiatives", "Justice Systems/Organizations", "Peace-Building Terms"]
+};
+
+// const AlphabetWheel = () => {
+//     return <SDGGame sdgId={4} categories={categories} />;
+// };
+
+const AlphabetWheel = ({ sdgId, categories }) => {
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [currentLetter, setCurrentLetter] = useState(null);
     const [isSpinning, setIsSpinning] = useState(false);
@@ -29,12 +41,12 @@ const SDGGame = ({ sdgId, categories }) => {
 
     const spinWheel = () => {
         setIsSpinning(true);
-        setFeedback(''); // Clear previous feedback
+        setFeedback(''); 
         setTimeout(() => {
             const randomIndex = Math.floor(Math.random() * letters.length);
             setCurrentLetter(letters[randomIndex]);
             setIsSpinning(false);
-        }, 3000); // Spin duration
+        }, 3000); 
     };
 
     const handleWordSubmission = () => {
@@ -150,4 +162,5 @@ const SDGGame = ({ sdgId, categories }) => {
     );
 };
 
-export default SDGGame;
+export default AlphabetWheel;
+

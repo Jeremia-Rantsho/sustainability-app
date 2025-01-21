@@ -2,7 +2,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './index.css';
-import logo from '../assets/Logo.png'; // Adjust path if necessary
+import logo from '../assets/logo2.jpg'; // Adjust path if necessary
 
 const Logout = () => {
     const navigate = useNavigate();

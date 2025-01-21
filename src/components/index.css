@@ -14,17 +14,15 @@ body {
   padding-top: 10px;
 }
 
-.game-selection-container {
-
   /* Top navigation bar */
   .top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #f26522;
     /* background-color: #000000; */
-    color: white;
+    /* color: white; */
     border-radius: 8px;
     margin-bottom: 20px;
   }
@@ -33,26 +31,18 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    background: black;
-    color: #f26522;
+    background-color: white;
+    color: black;
     border: none;
-    border-right: 0.5px solid #f26522;
-    border-top: 0.5px solid #f26522;
+    border-right: 0.5px solid #fff;
+    border-top: 0.5px solid #ffff;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease;
-    margin-right: 75%;
-  }
-
-  .back-button:hover {
-    background-color: #f26522;
-    color: black;
-    border: none;
-    box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
-    /* border-color: #0056b3; */
-  }
+    margin-right: 75% auto;
+    }
 
   .nav-buttons-right {
     display: flex;
@@ -64,8 +54,8 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    background: black;
-    color: #f26522;
+    background: white;
+    color: black;
     border: none;
     border-right: 0.5px solid #f26522;
     border-top: 0.5px solid #f26522;
@@ -77,17 +67,9 @@ body {
     font-weight: bold;
   }
 
-  .nav-button:hover,
-  .logout-button:hover {
-    background-color: #f26522;
-    color: black;
-    border: none;
-    box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
-  }
-
   .logout-button {
-    background: black;
-    color: #f26522;
+    background: white;
+    color: black;
     border: none;
     border-right: 0.5px solid #f26522;
     border-top: 0.5px solid #f26522;
@@ -228,13 +210,13 @@ body {
     margin-bottom: 0px;
     margin-right: 50%;
   }
-}
+
 
 .footer {
   background-color: #000000;
   color: #fff;
   text-align: center;
-  padding: 5px;
+  padding: 20px;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -256,12 +238,6 @@ body {
   font-style: italic;
 }
 
-/* Add a subtle hover effect to make the footer interactive */
-.footer p:hover {
-  color: #f26522;
-  cursor: pointer;
-}
-
 /* Profile CSS */
 
 .profile-container {
@@ -277,7 +253,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #333;
+  background-color: #f26522;
   color: white;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -287,26 +263,25 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 15px;
-  background: black;
-  color: #f26522;
+  background: white;
+  color: black;
   border: none;
-  border-right: 0.5px solid #f26522;
-  border-top: 0.5px solid #f26522;
+  border-right: 0.5px solid #fff;
+  border-top: 0.5px solid #ffff;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
   font-size: 16px;
   transition: all 0.3s ease;
-  margin-right: 75%;
-}
+  margin-right: 75% auto;
+  }
 
-.back-button:hover {
-  border-top: none;
-  border-right: none;
-  background-color: #f26522;
-  color: black;
-  box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
-}
+  .back-button:hover {
+    background-color: #fff;
+    color: black;
+    border: none;
+    box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
+  }
 
 .nav-buttons-right {
   display: flex;
@@ -318,8 +293,8 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 15px;
-  background: black;
-  color: #f26522;
+  background: white;
+  color: black;
   border: none;
   border-right: 0.5px solid #f26522;
   border-top: 0.5px solid #f26522;
@@ -331,18 +306,9 @@ body {
   font-weight: bold;
 }
 
-.nav-button:hover,
-.logout-button:hover {
-  border-top: none;
-  border-right: none;
-  background-color: #f26522;
-  color: black;
-  box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
-}
-
 .logout-button {
-  background: black;
-  color: #f26522;
+  background: white;
+  color: black;
   border: none;
   border-right: 0.5px solid #f26522;
   border-top: 0.5px solid #f26522;
@@ -458,19 +424,16 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  /* background-color: #333; */
-  background: repeating-linear-gradient(135deg, #222222, #333333 5px, #000 5px, #000 50px);
+  background-color: #f26522;
   color: white;
   border-radius: 8px;
   margin-bottom: 10px;
   box-sizing: border-box;
   position: fixed;
-  /* Make it fixed at the top */
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  /* Ensure it stays above other content */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -478,26 +441,18 @@ h2 {
   display: flex;
   align-items: center;
   padding: 10px 15px;
-  background: black;
-  color: #f26522;
+  background-color: white;
+  color: black;
   border: none;
-  border-right: 0.5px solid #f26522;
-  border-top: 0.5px solid #f26522;
+  border-right: 0.5px solid #fff;
+  border-top: 0.5px solid #ffff;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
   font-size: 16px;
   transition: all 0.3s ease;
   margin-right: 75% auto;
-}
-
-.back-button:hover {
-  border-top: none;
-  border-right: none;
-  background-color: #f26522;
-  color: black;
-  box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
-}
+  }
 
 .nav-buttons-right {
   display: flex;
@@ -510,8 +465,8 @@ h2 {
   display: flex;
   align-items: center;
   padding: 10px 15px;
-  background: black;
-  color: #f26522;
+  background-color: white;
+  color: black;
   border: none;
   border-right: 0.5px solid #f26522;
   border-top: 0.5px solid #f26522;
@@ -520,22 +475,6 @@ h2 {
   font-size: 16px;
   margin-left: 10px;
   transition: all 0.3s ease;
-  font-weight: bold;
-}
-
-.nav-button:hover,
-.logout-button:hover {
-  background-color: #f26522;
-  border-color: #f26522;
-}
-
-.logout-button {
-  background: black;
-  color: #f26522;
-  border: none;
-  border-right: 0.5px solid #f26522;
-  border-top: 0.5px solid #f26522;
-  border-radius: 5px;
   font-weight: bold;
 }
 
@@ -644,8 +583,8 @@ select {
 .survey-container button {
   width: 100%;
   padding: 12px;
-  background-color: #000000;
-  color: #f26522;
+  background-color: #f26522;
+  color: #fff;
   font-size: 20px;
   font-weight: bold;
   border: none;
@@ -671,7 +610,7 @@ select {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.8); */
   color: white;
   padding: 150px;
   border-radius: 10px;
@@ -789,30 +728,6 @@ select {
   background-color: #e0dbdb;
   /* height: 50%; */
   padding-bottom: 15px;
-}
-
-.registration-box {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.15);
-  background-color: #e0dbdb;
-  padding-bottom: 15px;
-}
-
-.regHeader{
-  text-align: center;
-}
-
-.regBtn{
-  align-items: center;
-  padding: 10px 15px;
-  margin-top: 5px;
 }
 
 .login-logo {
@@ -1073,7 +988,7 @@ input:focus {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #f26522;
     color: white;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -1083,25 +998,25 @@ input:focus {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    background: black;
-    color: #f26522;
+    background: white;
+    color: black;
     border: none;
-    border-right: 0.5px solid #f26522;
-    border-top: 0.5px solid #f26522;
+    border-right: 0.5px solid #fff;
+    border-top: 0.5px solid #ffff;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease;
-    margin-right: 75%;
-  }
-
-  .back-button:hover {
-    background-color: #f26522;
-    color: black;
-    border: none;
-    box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
-  }
+    margin-right: 75% auto;
+    }
+  
+    .back-button:hover {
+      background-color: #fff;
+      color: black;
+      border: none;
+      box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
+    }
 
   .nav-buttons-right {
     display: flex;
@@ -1113,8 +1028,8 @@ input:focus {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    background: black;
-    color: #f26522;
+    background: white;
+    color: black;
     border: none;
     border-right: 0.5px solid #f26522;
     border-top: 0.5px solid #f26522;
@@ -1126,17 +1041,9 @@ input:focus {
     font-weight: bold;
   }
 
-  .nav-button:hover,
-  .logout-button:hover {
-    background-color: #f26522;
-    color: black;
-    border: none;
-    box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
-  }
-
   .logout-button {
-    background: black;
-    color: #f26522;
+    background: white;
+    color: black;
     border: none;
     border-right: 0.5px solid #f26522;
     border-top: 0.5px solid #f26522;
@@ -1219,7 +1126,7 @@ input:focus {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color:#f26522;
     color: white;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -1229,25 +1136,25 @@ input:focus {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    background: black;
-    color: #f26522;
+    background: white;
+    color: black;
     border: none;
-    border-right: 0.5px solid #f26522;
-    border-top: 0.5px solid #f26522;
+    border-right: 0.5px solid #fff;
+    border-top: 0.5px solid #ffff;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease;
-    margin-right: 75%;
-  }
-
-  .back-button:hover {
-    background-color: #f26522;
-    color: black;
-    border: none;
-    box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
-  }
+    margin-right: 75% auto;
+    }
+  
+    .back-button:hover {
+      background-color: #fff;
+      color: black;
+      border: none;
+      box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
+    }
 
   .nav-buttons-right {
     display: flex;
@@ -1259,8 +1166,8 @@ input:focus {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    background: black;
-    color: #f26522;
+    background: white;
+    color: black;
     border: none;
     border-right: 0.5px solid #f26522;
     border-top: 0.5px solid #f26522;
@@ -1272,17 +1179,9 @@ input:focus {
     font-weight: bold;
   }
 
-  .nav-button:hover,
-  .logout-button:hover {
-    background-color: #f26522;
-    color: black;
-    border: none;
-    box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
-  }
-
   .logout-button {
-    background: black;
-    color: #f26522;
+    background: white;
+    color: black;
     border: none;
     border-right: 0.5px solid #f26522;
     border-top: 0.5px solid #f26522;
@@ -1391,31 +1290,31 @@ input:focus {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #f26522;
     color: white;
     border-radius: 8px;
     margin-bottom: 20px;
   }
 
   .back-button {
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    background: black;
-    color: #f26522;
-    border: none;
-    border-right: 0.5px solid #f26522;
-    border-top: 0.5px solid #f26522;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    margin-right: 75%;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background: white;
+  color: black;
+  border: none;
+  border-right: 0.5px solid #fff;
+  border-top: 0.5px solid #ffff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin-right: 75% auto;
   }
 
   .back-button:hover {
-    background-color: #f26522;
+    background-color: #fff;
     color: black;
     border: none;
     box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
@@ -1431,8 +1330,8 @@ input:focus {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    background: black;
-    color: #f26522;
+    background: white;
+    color: black;
     border: none;
     border-right: 0.5px solid #f26522;
     border-top: 0.5px solid #f26522;
@@ -1444,17 +1343,10 @@ input:focus {
     font-weight: bold;
   }
 
-  .nav-button:hover,
-  .logout-button:hover {
-    background-color: #f26522;
-    color: black;
-    border: none;
-    box-shadow: 0 0 10px rgba(242, 101, 34, 0.7), 0 0 20px rgba(242, 101, 34, 0.5);
-  }
 
   .logout-button {
-    background: black;
-    color: #f26522;
+    background: white;
+    color: black;
     border: none;
     border-right: 0.5px solid #f26522;
     border-top: 0.5px solid #f26522;
@@ -1478,4 +1370,86 @@ input:focus {
     margin-top: 373px;
     margin-right: 50%;
   }
+}
+
+.category-wheel-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.categories-container, .wheel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.category-button, .spin-button, .submit-button, .reset-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.category-button:hover, .spin-button:hover, .submit-button:hover, .reset-button:hover {
+  background-color: #45a049;
+}
+
+.wheel {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #4CAF50;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.wheel-letter {
+  position: absolute;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f1f1f1;
+  color: #4CAF50;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.wheel-letter.highlighted {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.wheel.spinning {
+  animation: spin 3s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.word-input {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback {
+  margin-top: 10px;
+  color: #4CAF50;
+  font-weight: bold;
 }

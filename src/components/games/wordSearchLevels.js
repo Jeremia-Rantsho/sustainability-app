@@ -3,28 +3,20 @@ import { FaUser, FaSignOutAlt, FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "./wordSearchLevels.css";
 
-const wordsToFind = [
-    "equality",
-    "diversity",
-    "justice",
-    "intersectionality",
-    "parity",
-    "transgender",
-    "cisgender",
-    "feminism",
-    "feminist",
-    "misogyny",
-    "misandry",
-    "patriarchy",
-    "matriarchy",
-    "multiculturalism",
-    "allyship",
-
-];
+const wordLists = {
+    sdgTwo: ["equality", "diversity", "justice", "intersectionality", "parity", "transgender", "cisgender",
+        "feminism", "feminist", "misogyny", "misandry", "patriarchy", "matriarchy", "multiculturalism", "allyship"],
+    sdgSix: ["water", "sanitation", "hygiene", "clean", "waterborne", "disease", "wastewater", "treatment", "reuse",
+        "conservation", "sustainable", "development", "access", "Equity", "ecosystem", "pollution"],
+    sdgTen: ["inequality", "discrimination", "marginalization", "oppression", "privilege", "equity", "justice",
+        "intersectionality", "diversity", "inclusion", "exclusion", "prejudice", "stigma", "bias", "bigotry", "racism"],
+    sdgFourteen: ["ocean", "sea", "marine", "ecosystem", "conservation", "sustainable", "development", "pollution",
+        "plastic", "waste", "overfishing", "acidification", "coral", "reef", "biodiversity", "habitat"]
+}
 
 const gridSize = 10;
 
-function WordSearchGameTwo() {
+const WordSearchGames = () => {
     const navigate = useNavigate();
     const [grid, setGrid] = useState([]);
     const [foundWords, setFoundWords] = useState([]);
@@ -47,7 +39,8 @@ function WordSearchGameTwo() {
             Array(gridSize).fill("")
         );
 
-        wordsToFind.forEach((word) => {
+        //Add an if statement to check the SDG id and generate the grid accordingly with appropriate words
+        wordLists.sdgFourteen.forEach((word) => {
             placeWordInGrid(newGrid, word);
         });
 
@@ -111,7 +104,7 @@ function WordSearchGameTwo() {
 
     return (
         <div className="game-container">
-            <div className="top-nav">
+            <div className="word-search-nav">
                 <button onClick={goBack} className="back-button">
                     <FaArrowLeft /> Back
                 </button>
@@ -146,7 +139,7 @@ function WordSearchGameTwo() {
                 <div>
                     <h1>Words to Find:</h1>
                     <ul>
-                        {wordsToFind.map((word) => (
+                        {wordLists.sdgFourteen.map((word) => (
                             <li
                                 key={word}
                                 style={{
@@ -195,4 +188,4 @@ function WordSearchGameTwo() {
     );
 }
 
-export default WordSearchGameTwo;
+export default WordSearchGames;

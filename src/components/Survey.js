@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './index.css';
 import figureImage from '../assets/figure.jpg'; // Import the figure image
+import loadingGif from '../assets/SDG Wheel.gif';
 import { FaUser, FaSignOutAlt, FaArrowLeft } from 'react-icons/fa'; // Import icons
 
 const Survey = () => {
@@ -176,15 +177,7 @@ const Survey = () => {
 
             {popupVisible && (
                 <div className="popup">
-                    <div className="message">{currentMessage}</div>
-                    <div className="bubbles">
-                        {bubbleColors.map((color, index) => (
-                            <div
-                                key={index}
-                                className={`bubble bubble-${color}`}
-                            />
-                        ))}
-                    </div>
+                    <img src={loadingGif} alt="Loading..." className="loading-gif" />
                 </div>
             )}
             <div className="footer">

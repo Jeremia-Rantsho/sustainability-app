@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import "./riddleLevels.css";
 
-const RiddleGameThree = () => {
+const RiddleGame = () => {
   const navigate = useNavigate();
 
   const goBack = () => {
@@ -63,4 +63,4 @@ const RiddleGameThree = () => {
   );
 };
 
-export default RiddleGameThree;
+export default RiddleGame;
