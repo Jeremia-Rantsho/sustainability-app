@@ -7,62 +7,62 @@ import "./memoryGameLevels.css";
 const initialCards = [
   {
     id: 1,
-    image: "/no-poverty01.jpeg",
+    image: "/sdg5/gender-quality01.png",
     value: "SDG1",
     matched: false,
   },
   {
     id: 2,
-    image: "/no-poverty02.png",
+    image: "/sdg5/gender-quality02.jpg",
     value: "SDG2",
     matched: false,
   },
   {
     id: 3,
     value: "SGD3",
-    image: "/no-poverty03.jpeg",
+    image: "/sdg5/gender-quality03.jpg",
     matched: false,
   },
   {
     id: 4,
     value: "SDG4",
-    image: "/no-poverty04.jpeg",
+    image: "/sdg5/gender-quality04.png",
     matched: false,
   },
   {
     id: 5,
     value: "SDG5",
-    image: "/no-poverty05.jpeg",
+    image: "/sdg5/gender-quality05.png",
     matched: false,
   },
   {
     id: 6,
     value: "SDG6",
-    image: "/no-poverty06.jpeg",
+    image: "/sdg5/gender-quality06.jpg",
     matched: false,
   },
   {
     id: 7,
     value: "SDG7",
-    image: "/no-poverty07.png",
+    image: "/sdg5/gender-quality07.png",
     matched: false,
   },
   {
     id: 8,
     value: "SDG8",
-    image: "/no-poverty08.png",
+    image: "/sdg5/gender-quality08.jpg",
     matched: false,
   },
   {
     id: 9,
     value: "SDG9",
-    image: "/no-poverty09.jpeg",
+    image: "/sdg5/gender-quality09.jpg",
     matched: false,
   },
   {
     id: 10,
     value: "SDG10",
-    image: "/no-poverty10.jpeg",
+    image: "/sdg5/gender-quality10.jpg",
     matched: false,
   },
 ];
@@ -116,6 +116,11 @@ const MemoryGameFive = () => {
   const goBack = () => {
     navigate(-1);
   };
+
+  const isGameWon = matchedCards.length === initialCards.length * 2;
+  if(isGameWon){
+    navigate("/games/sixthLevel/6");
+  }
 
   return (
     <div>

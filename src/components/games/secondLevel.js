@@ -4,27 +4,25 @@ import { useNavigate } from "react-router-dom";
 import "./wordSearchLevels.css";
 
 const wordsToFind = [
-    "equality",
-    "diversity",
-    "justice",
-    "intersectionality",
-    "parity",
-    "transgender",
-    "cisgender",
-    "feminism",
-    "feminist",
-    "misogyny",
-    "misandry",
-    "patriarchy",
-    "matriarchy",
-    "multiculturalism",
-    "allyship",
-
+    "FOOD",
+    "MALNUTRITION",
+    "PRODUCTION",
+    "FERTILIZERS",
+    "HOUSEHOLD",
+    "OBESITY",
+    "GMFOODS",
+    "CROPS",
+    "AGRICULTURE",
+    "NUTRITION",
+    "HUNGRY",
+    "OVERWEIGHT",
+    "NOURISHED",
+    "UNDERNUTRITION"
 ];
 
 const gridSize = 10;
 
-function WordSearchGameTwo() {
+const WordSearchGameTwo = () => {
     const navigate = useNavigate();
     const [grid, setGrid] = useState([]);
     const [foundWords, setFoundWords] = useState([]);
@@ -55,7 +53,7 @@ function WordSearchGameTwo() {
             for (let j = 0; j < gridSize; j++) {
                 if (newGrid[i][j] === "") {
                     newGrid[i][j] = String.fromCharCode(
-                        97 + Math.floor(Math.random() * 26)
+                        65 + Math.floor(Math.random() * 26)
                     );
                 }
             }
@@ -159,33 +157,7 @@ function WordSearchGameTwo() {
                     </ul>
                 </div>
             </div>
-            {/* <div style={{ display: 'grid', gridTemplateColumns: `repeat(${grid[0].length}, 50px)` }}>
-                {grid.map((row, rowIndex) =>
-                    row.map((letter, colIndex) => {
-                        const isSelected = foundWords.some(
-                            (cell) => cell.row === rowIndex && cell.col === colIndex
-                        );
-                        return (
-                            <div
-                                key={`${rowIndex}-${colIndex}`}
-                                onClick={() => handleCellClick(rowIndex, colIndex)}
-                                style={{
-                                    width: '50px',
-                                    height: '50px',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    border: '1px solid black',
-                                    backgroundColor: isSelected ? 'lightblue' : 'white',
-                                    cursor: 'pointer',
-                                }}
-                            >
-                                {letter}
-                            </div>
-                        );
-                    })
-                )}
-            </div> */}
+            
             {/* <div className="footer">
                 <p>Sustainability Awareness Gaming App</p>
                 <p>University of Johannesburg</p>

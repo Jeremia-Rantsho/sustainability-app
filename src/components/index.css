@@ -5,6 +5,19 @@ body {
   padding: 0;
 }
 
+.register-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95.5vh;
+  background-color: #f0f8f5;
+}
+
+.user-registration{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .game-selection-container {
   text-align: center;
   margin: 100px auto;
@@ -831,7 +844,7 @@ input:focus {
 }
 
 /* Container for bubbles */
-.login-container.bubble-container {
+.login-container .bubble-container {
   position: fixed;
   top: 0;
   left: 0;

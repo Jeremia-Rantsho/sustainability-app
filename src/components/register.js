@@ -4,8 +4,10 @@ import './index.css';
 
 const Register = () => {
     const [formData, setFormData] = useState({
-        username: "",
+        name: "",
+        surname: "",
         email: "",
+        username: "",
         password: "",
         confirmPassword: "",
     });
@@ -23,7 +25,7 @@ const Register = () => {
         setError("");
         setSuccess("");
 
-        const { username, email, password, confirmPassword } = formData;
+        const { name, surname, username, email, password, confirmPassword } = formData;
 
         if (password !== confirmPassword) {
             setError("Passwords do not match");
@@ -32,6 +34,8 @@ const Register = () => {
 
         try {
             const response = await axios.post("http://localhost:3000/register", {
+                name,
+                surname,
                 username,
                 email,
                 password,
@@ -39,6 +43,8 @@ const Register = () => {
             if (response.data.success) {
                 setSuccess("Registration successful!");
                 setFormData({
+                    name: "",
+                    surname: "",
                     username: "",
                     email: "",
                     password: "",
@@ -60,61 +66,64 @@ const Register = () => {
                     <div key={i} className="bubble"></div>
                 ))}
             </div>
-
             <div className='registration-box'>
-                <h2 className='regHeader'>Register to gain more information about the SDGs</h2>
-                {error && <p style={{ color: "red" }}>{error}</p>}
-                {success && <p style={{ color: "green" }}>{success}</p>}
+                <h2>Registration</h2>
                 <form onSubmit={handleSubmit}>
                     <div>
-                        <label>Username</label>
-                        <input
-                            type="text"
-                            name="username"
-                            value={formData.username}
-                            onChange={handleChange}
-                            required
-                        />
+                        <div className='user-registration'>
+                            <><label>
+                                Name <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+                            </label></>
+
+                            <><label>
+                                Surname <input type="text" name="surname" value={formData.surname} onChange={handleChange} required />
+                            </label></>
+                        </div>
+                        <div className='user-registration'>
+                            <><label>
+                                Email <input type="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    required />
+                            </label></>
+
+                            <><label>
+                                Username <input type="text"
+                                    name="username"
+                                    value={formData.username}
+                                    onChange={handleChange}
+                                    required />
+                            </label></>
+                        </div>
+                        <div className='user-registration'>
+                            <><label>
+                                Password <input type="password"
+                                    name="password"
+                                    value={formData.password}
+                                    onChange={handleChange}
+                                    required />
+                            </label></>
+
+                            <><label>
+                                Confirm Pasword <input type="password"
+                                    name="confirmPassword"
+                                    value={formData.confirmPassword}
+                                    onChange={handleChange}
+                                    required />
+                            </label></>
+                        </div>
+                        <button type="submit">Register</button>
                     </div>
-                    <div>
-                        <label>Email</label>
-                        <input
-                            type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                        />
-                    </div>
-                    <div>
-                        <label>Password</label>
-                        <input
-                            type="password"
-                            name="password"
-                            value={formData.password}
-                            onChange={handleChange}
-                            required
-                        />
-                    </div>
-                    <div>
-                        <label>Confirm Password</label>
-                        <input
-                            type="password"
-                            name="confirmPassword"
-                            value={formData.confirmPassword}
-                            onChange={handleChange}
-                            required
-                        />
-                    </div>
-                    <button className='regBtn' type="submit">Register</button>
                 </form>
+                <p>Already have an account? <a className='' href='/Login.js'>Login</a> </p>
             </div>
 
-            <div className="footer">
+            {/* <div className="footer">
                 <p>Sustainability Awareness Gaming App</p>
                 <p>University of Johannesburg</p>
                 <p>2024</p>
-            </div>
+            </div> */}
         </div>
     );
 };
